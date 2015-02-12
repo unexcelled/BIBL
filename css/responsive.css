@@ -1,0 +1,146 @@
+
+/*Global Responsive CSS*/
+img {max-width: 100% !important;} 
+form{margin:0px !important;}
+#mobile_search form .search label{display: none !important;}
+#nav-toggle {border-radius: 5px;}
+
+
+/* #Tablets (Screensize between 768px 1024px)
+================================================== */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)  {
+
+/* Default Settings */	
+.wrapper960 {width:95% !important;}
+
+/* Hide Containers/divs */
+#custom{display:none;}
+#logo_mobile{display: none;}
+#container_hornav.container{display:none !important;}
+
+/* Show Containers/divs */
+#container_logo_menu_mobile{display: block;}
+
+/* Position/style elements */
+#container_header{height:120px;}
+#search{top:10px !important; right: 0px !important;}
+#nav-toggle{top: 100px; right: 30px; position: absolute;}
+#nav.opened, #nav.closed{margin-top: 50px; }
+div#container_logo_menu_mobile.container div.wrapper960{background-color: transparent !important;}
+}
+
+
+/* #Tablets (under 768px)
+================================================== */  
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+/* Default Settings */	
+.wrapper960 {width:95% !important;}
+
+/* Hide Containers/divs */
+#custom{display:none;}
+#logo_mobile{display: none;}
+#container_hornav.container{display:none !important;}
+
+/* Show Containers/divs */
+#container_logo_menu_mobile{display: block;}
+
+/* Position/style elements */
+#container_header{height:120px;}
+#search{top:10px !important; right: 0px !important;}
+#nav-toggle{top: 100px; right: 30px; position: absolute;}
+#nav.opened, #nav.closed{margin-top: 50px; }
+div#container_logo_menu_mobile.container div.wrapper960{background-color: transparent !important;}
+}
+
+
+/* #Small Devices (Screensize under 767px)
+================================================== */
+
+@media only screen and (max-width: 767px) {
+
+/* Default Settings */
+.wrapper960 {width:95% !important;}
+.top-1, .top-2, .contenttop, .contentbottom, .bottom-1, .bottom-2, .base-1, .base-2, #sidecol_a, #sidecol_b {width:100% !important;}
+#sidecol_a, #sidecol_b{width:97.5% !important;}
+#content_remainder {width:97% !important;}
+
+/* Hide Containers/divs */
+#container_header {display:none !important;}
+#container_hornav.container{display:none !important;}
+#breadcrumb.block_holder {display: none;}
+
+/* Joomla Specific Stuff */
+#jform_contact_message, #jform_contact_emailmsg{max-width:360px !important;}
+
+/* Position/style elements */
+#logo {top: -40% !important;}
+#nav-toggle{margin-right: 5px;}
+
+
+
+/*------ Mobile Containers Styling------ */
+
+/* Mobile logo and responsive menu styling */
+#container_logo_menu_mobile{
+	display: block;
+    padding: 0px;
+}
+
+div#container_logo_menu_mobile.container div.wrapper960{
+	box-shadow: 0 0 9px 0 #000000 inset;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#logo_mobile{float: left;}
+
+
+/* Mobile social icons and search styling */
+#container_social_mobile {
+    display: block;
+    padding: 0px;
+}
+
+#social_mobile{height:44px; margin:5px 0px;}
+#social_mobile.block_holder{box-shadow:0px 0px 0px;}
+
+#social{
+	z-index:11;
+}
+
+/* center social icons */
+#social{position: relative !important; left: 0px !important; top: 0px !important;}
+#social ul{text-align: center !important;}
+#social ul li{display: inline-block !important; float: none !important;}
+
+
+
+/* Search */
+#mobile_search {
+    margin:0px;
+	z-index:10;
+	float:right;
+}
+
+#mobile_search form .search label{
+	display: none !important;
+}
+
+#mobile_search .inputbox {
+    border:medium;
+	background-color: #ffffff;
+	border-radius: 5px;
+	color: #5B5B5B;
+	font: 14px Arial,Helvetica,sans-serif;
+	height: 34px;
+    max-width: 100px !important;
+	padding:0px 8px !important;
+	margin-top: 5px !important;
+	margin-left: 5px !important;
+	text-align:center;
+	box-shadow:0 0 2px 0 rgba(0, 0, 0, 0.3) inset;
+}
+
+#nav-toggle{margin:10px;}
+
+}
